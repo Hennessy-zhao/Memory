@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get  '/messages/message' => 'messages#message'
 
+
+  post '/memory/number' => 'memory#number'
   
 end

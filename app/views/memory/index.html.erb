@@ -8,8 +8,10 @@
 				</div>
 				<div class="col-md-10 col-md-offset-1" id="pic"></div>	
 			</div>
-			<div id="move">
-				<a href="/messages/message"><%= image_tag "move.jpg", width: "166px", height: "166px" %></a>
+			<div id="move" onclick="document.getElementById('form1').submit();">
+				<%= form_tag("/memory/number", method: "post", id: "form1") do |f|  %>
+					<%= image_tag "move.jpg", width: "166px", height: "166px" %>
+				<% end %>
 			</div>
 		</div>
 		<div class="col-md-12" id="contributor">
