@@ -13,10 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160403032241) do
 
-  create_table "numbers", force: :cascade do |t|
-    t.text     "memorynum",  limit: 16777215
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-  end
+# Could not dump table "numbers" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
 end

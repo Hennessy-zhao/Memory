@@ -9,6 +9,7 @@ class MemoryController < ApplicationController
 		@num = Number.first
 		@num.memorynum = number
 		@num.save
-		render "index"
+		
+		redirect_to(:controller => 'memory', :action => 'index')
 	end
 end

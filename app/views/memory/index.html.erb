@@ -1,81 +1,51 @@
 <div id="memory_index">
 	<div class="column">
-		<div class="col-md-12" id="top">
+		<div class="col-md-12" id="top" >
 			<div class="column">
 				<div class="col-md-12" id="title">
 					<%= image_tag "logo.jpg", id: "img1" %>
 					<%= image_tag "title.jpg", id: "img2" %>
 				</div>
-				<div class="col-md-10 col-md-offset-1" id="pic"></div>	
+				<div class="col-md-12" id="pic"></div>	
 			</div>
-			<div id="move" onclick="document.getElementById('form1').submit();">
+			<!--div id="move" onclick="document.getElementById('form1').submit();">
 				<%= form_tag("/memory/number", method: "post", id: "form1") do |f|  %>
 					<%= image_tag "move.jpg", width: "166px", height: "166px" %>
 				<% end %>
-			</div>
+			</div-->
 		</div>
 		<div class="col-md-12" id="contributor">
-			<marquee scrollamount="5" direction="left" >
-				<p class="p1">
-					捐款情况&nbsp;&nbsp;&nbsp;&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）：500元；&nbsp;
-				</p>
-			</marquee>
-		</div>
-		<div class="col-md-12" id="body">
 			<div class="row">
-				<div class="col-md-4" id="body-left">
-					<div class="column">
-						<div class="col-md-12" id="host">
-							<table class="tab1">
-								<tr>
-									<td align="right" width="40%">总顾问：&nbsp;&nbsp;</td>
-									<td align="left">徐放鸣书记、孟昭学部长</td>
-								</tr>
-								<tr>
-									<td align="right">组委会主任：&nbsp;&nbsp;</td>
-									<td align="left">徐放鸣书记、孟昭学部长</td>
-								</tr>
-								<tr>
-									<td align="right">组委会副主任：&nbsp;&nbsp;</td>
-									<td align="left">徐放鸣书记、孟昭学部长</td>
-								</tr>
-								<tr>
-									<td align="right">组委会副主任：&nbsp;&nbsp;</td>
-									<td align="left">徐放鸣书记、孟昭学部长</td>
-								</tr>
-								<tr>
-									<td align="right">组委会副主任：&nbsp;&nbsp;</td>
-									<td align="left">徐放鸣书记、孟昭学部长</td>
-								</tr>
-							</table>
+				<div class="col-md-2"><center><p class="p1">捐款情况:</p></center></div>
+				<div class="col-md-10">
+					<marquee scrollamount="5" direction="left" >
+						<p class="p1">张三（13级学生）500元；&nbsp;张三（13级学生）500元；&nbsp;张三（13级学生）500元；&nbsp;张三（13级学生）：500元；&nbsp;张三（13级学生）500元；&nbsp;张三（13级学生）500元；&nbsp;张三（13级学生）500元；&nbsp;
+						</p>
+					</marquee>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-1" id="body" >
+			<div class="row">
+				<div class="col-md-4">
+					<div class="col-md-12" id="host">
+						<div class="row" style="padding:0px;">
+							<div class="col-md-4" id="hoster">顾问</div>
+							<div class="col-md-8" id="hoster">&nbsp;:&nbsp;&nbsp;徐放鸣</div>
 						</div>
-						<div class="col-md-12" id="news">
-							<span class="span1">新&nbsp;闻&nbsp;&nbsp;公&nbsp;告</span>
-							<div id="more">MORE</div>
-							<div style="border-top: 0.1em dashed rgba(255,255,255,0.6);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
-
-							<p class="news">
-								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日起，山西省晋中市、江西省吉安市实行弹性作息制度，开始2.5天休假模式，这两地机关事业单位的工作人员一个月可享有两次周五下午调休安排。为了避免影响群众办事，两地均提出相关措施，要求不得因弹性休息而影响工作正常运转。
-							</p>
-							<p class="news">
-								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;国办去年8月发文提出鼓励“周五下午与周末”2.5天休假。据了解，目前全国已先后有河北、江西等8省份正式发文鼓励实行2.5天休假模式。
-							</p>
-							<p class="news">
-								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日，国办相关负责人接受新华社记者采访时指出，实行夏季周末弹性作息制度有利于激发旅游消费需求，但各地调整需要严格遵守国家有关规定，不得随意调整工时。
-							</p>
-							<p class="news">
-								<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
-							</p>
-							<p class="news">
-								<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日，记者随机抽取山西省晋中市及江西省吉安市中9家企、事业单位的9名员工，其中有8位因自身工作或单位原因未休假。晋中市政府办公室一工作人员表示，2.5天假具体实施根据各部门自身情况决定。
-							</p>
+						<div class="row" style="padding:0px;">
+							<div class="col-md-4" id="hoster">组委会主任</div>
+							<div class="col-md-8" id="hoster">&nbsp;:&nbsp;&nbsp;蒋步仲、苗雨</div>
 						</div>
+						<div class="row" style="padding:0px;">
+							<div class="col-md-4" id="hoster">组委会成员</div>
+							<div class="col-md-8" id="hoster">&nbsp;:&nbsp;&nbsp;董兵、王志军</div>
+						</div>
+						
 					</div>
 				</div>
-				<div class="col-md-4" id="body-middle">
-					<div class="column">
-						<div class="col-md-12" id="pictures">
-							<div id="myCarousel" class="carousel" style="margin-top: 20px;background-color: rgb(248,248,248);border:1px solid rgb(201,201,201)">
+				<div class="col-md-4" id="pictures">
+					<div id="myCarousel" class="carousel" style="background-color: rgb(248,248,248);border:1px solid rgb(201,201,201)">
 							   <!-- 轮播（Carousel）指标 -->
 							   <ol class="carousel-indicators">
 							      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -87,7 +57,7 @@
 							      <li data-target="#myCarousel" data-slide-to="6"></li>
 							      <li data-target="#myCarousel" data-slide-to="7"></li>
 							   </ol>   
-							   <!-- 轮播（Carousel）项目 -->
+							   <!--轮播（Carousel）项目-->
 							   <div class="carousel-inner">
 							      <div class="item active">
 							         <%= image_tag "1.jpg" ,id: "img3" %>
@@ -114,7 +84,249 @@
 							         <%= image_tag "8.jpg" ,id: "img3" %>
 							      </div>
 							   </div>
-							   <!-- 轮播（Carousel）导航 -->
+							   <!--轮播（Carousel）导航-->
+							   <a class="carousel-control left" href="#myCarousel" 
+							      data-slide="prev">&lsaquo;</a>
+							   <a class="carousel-control right" href="#myCarousel" 
+							      data-slide="next">&rsaquo;</a>
+
+							    <div id="photo">费承铿先生旧照</div>
+					</div>
+				</div>
+				<div class="col-md-4" id="production">
+					<span class="span1">作&nbsp;品&nbsp;展&nbsp;示</span>
+					<div id="more">MORE</div>
+					<div style="border-top: 0.2em solid rgb(236,236,236);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+					<table class="tab2">
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《镰刀舞歌》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《穷人家的孩子早当家》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《镰刀舞歌》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《穷人家的孩子早当家》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《镰刀舞歌》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《穷人家的孩子早当家》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《镰刀舞歌》</td>
+										<td>1900</td>
+									</tr>
+									<tr>
+										<td width="80%"><span class="glyphicon glyphicon-list-alt"></span>《穷人家的孩子早当家》</td>
+										<td>1900</td>
+									</tr>
+								</table>			
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-4" id="news">
+					<span class="span1">新&nbsp;闻&nbsp;&nbsp;公&nbsp;告</span>
+					<div id="more">MORE</div>
+							<div style="border-top: 0.2em solid rgb(236,236,236);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日起，山西省晋中市、江西省吉安市实行弹性作息制度，开始2.5天休假模式，这两地机关事业单位的工作人员一个月可享有两次周五下午调休安排。为了避免影响群众办事，两地均提出相关措施，要求不得因弹性休息而影响工作正常运转。
+							</p>
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;国办去年8月发文提出鼓励“周五下午与周末”2.5天休假。据了解，目前全国已先后有河北、江西等8省份正式发文鼓励实行2.5天休假模式。
+							</p>
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;国办去年8月发文提出鼓励“周五下午与周末”2.5天休假。据了解，目前全国已先后有河北、江西等8省份正式发文鼓励实行2.5天休假模式。
+							</p>
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日，国办相关负责人接受新华社记者采访时指出，实行夏季周末弹性作息制度有利于激发旅游消费需求，但各地调整需要严格遵守国家有关规定，不得随意调整工时。
+							</p>
+				</div>
+				<div class="col-md-4" id="board">
+					<span class="span1">纪&nbsp;念&nbsp;文&nbsp;章</span>
+					<div id="more">MORE</div>
+								<div style="border-top: 0.2em solid rgb(236,236,236);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+								<p class="articles">
+								 	&nbsp;&nbsp;新京报记者梳理发现，山西晋中市、江西省吉安市文件均称实行“2.5天假”为拉动消费。晋中市相关文件指出，每年从4月1日至10月31日期间实行周五下午弹性作息。原则上每位工作人员一个月可享有两次周五下午调休安排，每周五下午不少于一半工作人员在岗。周五下午休假减少的工作时间，可采取以每周增加2小时工作时间，或将平时加班时间、法定节假日值班轮休时间调剂到星期五下午等方式予以解决，也可以考虑把带薪休假挪过来调剂执行。
+								</p>
+								<p class="articles">
+								 	&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+								</p>
+								<p class="articles">
+								 	&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+								</p>
+				</div>
+				<div class="col-md-4" >
+					<div class="col-md-12" id="message">
+						<span class="span1">纪&nbsp;念&nbsp;留&nbsp;言</span>
+									
+									<div style="border-top: 0.1em dashed rgba(255,255,255,0.6);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+									<marquee scrollamount="5" direction="up" >
+									<p class="msg">
+										张三：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+									</p>
+									<p class="msg">
+										张三：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+									</p>
+									<p class="msg">
+										张三：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+									</p>
+									<p class="msg">
+										张三：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+									</p>
+									<p class="msg">
+										张三：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+									</p>
+									</marquee>
+
+					</div>
+					<div class="col-md-12" id="contribute">
+									
+									<table class="tab3">
+										<tr>
+											<td><p class="money">捐款账户: 12345678900</p></td>
+										</tr>
+										<tr>
+											<td>
+												<span class="glyphicon glyphicon-qrcode" style="font-size: 5em;margin-right: 50px"></span>
+											</td>
+											<td>
+												<span class="glyphicon glyphicon-qrcode" style="font-size: 5em;margin-right: 50px"></span>
+											</td>
+										</tr>
+										<tr>
+											<td><p class="money">支付宝账号</p></td>
+											<td><p class="money">微信账号</p></td>
+										</tr>
+									</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12" id="bottom">
+			<div class="col-md-10 col-md-offset-1" id="instruction">
+				<p>2016&nbsp;&nbsp;版权所有：江苏师范大学</p>
+				<p>联系地址:江苏省徐州市铜山区上海路101号江苏师范大学泉山校区</p>
+				<p>邮编:221116&nbsp;&nbsp;email:xxxxxxxx</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		$('.carousel').carousel({
+		interval: 3000
+		});
+	});
+</script>
+
+
+<!-- <div class="col-md-12" id="body">
+			<div class="row">
+				<div class="col-md-4" id="body-left">
+					<div class="column">
+						<div class="col-md-12" id="host">
+							<table class="tab1">
+								<tr>
+									<td align="left" width="35%">&nbsp;&nbsp;总顾问</td>
+									<td align="left">:&nbsp;&nbsp;徐放鸣书记、孟昭学部长</td>
+								</tr>
+								<tr>
+									<td align="left">&nbsp;&nbsp;组委会主任</td>
+									<td align="left">:&nbsp;&nbsp;徐放鸣书记、孟昭学部长</td>
+								</tr>
+								<tr>
+									<td align="left">&nbsp;&nbsp;组委会副主任</td>
+									<td align="left">:&nbsp;&nbsp;徐放鸣书记、孟昭学部长</td>
+								</tr>
+								<tr>
+									<td align="left">&nbsp;&nbsp;组委会副主任</td>
+									<td align="left">:&nbsp;&nbsp;徐放鸣书记、孟昭学部长</td>
+								</tr>
+								<tr>
+									<td align="left">&nbsp;&nbsp;组委会副主任</td>
+									<td align="left">:&nbsp;&nbsp;徐放鸣书记、孟昭学部长</td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-12" id="news">
+							<span class="span1">新&nbsp;闻&nbsp;&nbsp;公&nbsp;告</span>
+							<div style="border-top: 0.2em solid rgb(236,236,236);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日起，山西省晋中市、江西省吉安市实行弹性作息制度，开始2.5天休假模式，这两地机关事业单位的工作人员一个月可享有两次周五下午调休安排。为了避免影响群众办事，两地均提出相关措施，要求不得因弹性休息而影响工作正常运转。
+							</p>
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;国办去年8月发文提出鼓励“周五下午与周末”2.5天休假。据了解，目前全国已先后有河北、江西等8省份正式发文鼓励实行2.5天休假模式。
+							</p>
+							<p class="news">
+								 <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日，国办相关负责人接受新华社记者采访时指出，实行夏季周末弹性作息制度有利于激发旅游消费需求，但各地调整需要严格遵守国家有关规定，不得随意调整工时。
+							</p>
+							<p class="news">
+								<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;江西吉安市相关文件也明确指出，该市每年从4月1日至10月31日实行周五下午弹性作息制度。原则上每位工作人员一个月可享有两次周五下午调休安排。
+							</p>
+							<p class="news">
+								<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;昨日，记者随机抽取山西省晋中市及江西省吉安市中9家企、事业单位的9名员工，其中有8位因自身工作或单位原因未休假。晋中市政府办公室一工作人员表示，2.5天假具体实施根据各部门自身情况决定。
+							</p>
+							<div id="more">MORE</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4" id="body-middle">
+					<div class="column">
+						<div class="col-md-12" id="pictures">
+							<div id="myCarousel" class="carousel" style="margin-top: 20px;background-color: rgb(248,248,248);border:1px solid rgb(201,201,201)">
+							   < 轮播（Carousel）指标 >
+							   <ol class="carousel-indicators">
+							      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							      <li data-target="#myCarousel" data-slide-to="1"></li>
+							      <li data-target="#myCarousel" data-slide-to="2"></li>
+							      <li data-target="#myCarousel" data-slide-to="3"></li>
+							      <li data-target="#myCarousel" data-slide-to="4"></li>
+							      <li data-target="#myCarousel" data-slide-to="5"></li>
+							      <li data-target="#myCarousel" data-slide-to="6"></li>
+							      <li data-target="#myCarousel" data-slide-to="7"></li>
+							   </ol>   
+							   <轮播（Carousel）项目>
+							   <div class="carousel-inner">
+							      <div class="item active">
+							         <%= image_tag "1.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "2.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "3.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "4.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "5.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "6.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "7.jpg" ,id: "img3" %>
+							      </div>
+							      <div class="item">
+							         <%= image_tag "8.jpg" ,id: "img3" %>
+							      </div>
+							   </div>
+							   <轮播（Carousel）导航>
 							   <a class="carousel-control left" href="#myCarousel" 
 							      data-slide="prev">&lsaquo;</a>
 							   <a class="carousel-control right" href="#myCarousel" 
@@ -126,8 +338,7 @@
 						<div class="col-md-12">
 							<div class="col-md-12" id="board">
 								<span class="span1">纪&nbsp;念&nbsp;文&nbsp;章</span>
-								<div id="more">MORE</div>
-								<div style="border-top: 0.1em dashed rgba(255,255,255,0.6);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
+								<div style="border-top: 0.2em solid rgb(236,236,236);width:95%;margin-top: 20px;margin-bottom: 20px;"></div>
 								<p class="articles">
 								 	&nbsp;&nbsp;新京报记者梳理发现，山西晋中市、江西省吉安市文件均称实行“2.5天假”为拉动消费。晋中市相关文件指出，每年从4月1日至10月31日期间实行周五下午弹性作息。原则上每位工作人员一个月可享有两次周五下午调休安排，每周五下午不少于一半工作人员在岗。周五下午休假减少的工作时间，可采取以每周增加2小时工作时间，或将平时加班时间、法定节假日值班轮休时间调剂到星期五下午等方式予以解决，也可以考虑把带薪休假挪过来调剂执行。
 								</p>
@@ -137,6 +348,7 @@
 								<p class="articles">
 								 	&nbsp;&nbsp;晋中市相关文件指出，在具体操作上给予各单位最大自主性。同时办法适用于全市党政机关、团体、事业单位，社会组织、企业可比照本办法执行。
 								</p>
+								<div id="more">MORE</div>
 							</div>
 						</div>
 					</div>
@@ -220,22 +432,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-12" id="bottom">
-			<div class="col-md-10 col-md-offset-1" id="instruction">
-				<p>2016&nbsp;&nbsp;版权所有：江苏师范大学</p>
-				<p>联系地址:江苏省徐州市铜山区上海路101号江苏师范大学泉山校区</p>
-				<p>邮编:221116&nbsp;&nbsp;email:xxxxxxxx</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<script type="text/javascript">
-	$(function(){
-		$('.carousel').carousel({
-		interval: 3000
-		});
-	});
-</script>
+		</div> -->
